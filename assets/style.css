@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header__logo {
+  height: 80px;
+  width: 80px;
+  background-color: blue;
+}
+
+/* GENERAL */
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__menu {
+  display: flex;
+  gap: 4rem;
+}
