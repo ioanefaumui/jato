@@ -14,73 +14,132 @@
     <div class="container">
       <header class="header">
         <figure class="header__logo">
-          <img src="./assets/img/jato-logo.svg" alt="Jato" />
+          <a href="#">
+            <img src="./assets/img/jato-logo.svg" alt="Jato" />
+          </a>
         </figure>
         <nav>
-          <ul class="header__menu">
+          <ul id='header-menu' class="header__menu">
             <li><a href="#" class="header__link">Home</a></li>
             <li><a href="#" class="header__link">Empresa</a></li>
             <li><a href="#" class="header__link">Contato</a></li>
-            <li><a href="#" class="header__link--call">(+55) 45 998546402</a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=5545998546402" class="header__link--call" target="_blank">(+55) 45 998546402</a></li>
           </ul>
+          <div id='burger-menu'><button id="menu-button">&#9776;</button></div>
         </nav>
       </header>
         <section class="hero">
-          <div id='slide' class="hero__slider">
-            <div class="hero__control">
-              <button id="slide-left"></button>
-              <button class="slide__indicator">&#9679;</button>
-              <button class="slide__indicator">&#9679;</button>
-              <button class="slide__indicator">&#9679;</button>
-              <button id='slide-right'></button>
-            </div>
+
+          <div id='slide' >
+            <div class="slideshow-container">
+              <div class="mySlides slide_1 fade">
+                <img src="assets/img/slide1.webp" style="width:100%">
+                <div class="slide__content">
+                  <h1>Empreender</h1>
+                  <p>Empreender é a nossa especialidade. Ao longo de 50 anos já impulsionamos centenas de start ups em mais de 30 países.</p>
+                  <button>🚀 Decolar!</button>
+                </div>
+              </div>
+              
+              <div class="mySlides slide_2 fade">
+                <img src="assets/img/slide2.webp" style="width:100%">
+                
+                <div class="slide__content">
+                  <h1>Criatividade</h1>
+                  <p>Empreender é a nossa especialidade. Ao longo de 50 anos já impulsionamos centenas de start ups em mais de 30 países.</p>
+                  <button>🚀 Decolar!</button>
+                </div>
+              </div>
+              
+              <div class="mySlides slide_3 fade">
+                <img src="assets/img/slide3.webp" style="width:100%">
+                <div class="slide__content">
+                  <h1>Determinação</h1>
+                  <p>Empreender é a nossa especialidade. Ao longo de 50 anos já impulsionamos centenas de start ups em mais de 30 países.</p>
+                  <button>🚀 Decolar!</button>
+                </div>
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+              </div>
+              <br>
+              
+              <div class='control' style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span> 
+              </div>
           </div>
-          <div class="hero__content">
-            <h1>Endeavour</h1>
-            <p class="hero__text">
-              Empreender é a nossa especialidade. Ao longo de 50 anos, já impulsionamos centenas de start ups em mais de 30 países.
-            </p>
-            <button class="hero__cta">🚀 Decolar!</button>
-          </div>
+          
         </section>
         <main>
           <section class="company">
             <div class="company__about">
-              <figure>
+              <figure class='company__figure'>
                 <img src="./assets/img/company.webp" alt="Jato etrepeuners in a meeting" class="company__image"/>
               </figure>
               <div>
+                <h2 class="company__title">Empresa</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ratione soluta voluptas velit dolor vero officiis ad harum dicta mollitia. Et iusto pariatur incidunt quae numquam nemo temporibus ut officiis?
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ratione soluta voluptas velit dolor vero officiis ad harum dicta mollitia. Et iusto pariatur incidunt quae numquam nemo temporibus ut officiis.
                 </p>
-                <button>SAIBA MAIS</button>
+                <button class="company__button green">SAIBA MAIS</button>
               </div>
             </div>
-            <p>
+            <p class="company__about--bottom">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis maxime reprehenderit dolorem ipsa modi temporibus, obcaecati odio fuga labore, dolore, amet voluptate voluptates expedita cumque recusandae voluptatum numquam doloribus quibusdam.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo debitis, adipisci ipsa, quaerat animi voluptas ab eius molestiae quae sunt soluta consectetur, dolore inventore obcaecati molestias facilis nostrum nobis aperiam.
             </p>
-            <button>VEJA NOSSA EQUIPE</button>
+            <button id='team-button' class="green green--bottom">VEJA NOSSA EQUIPE</button>
           </section>
-          <section>
-              <figure>
-                <img src="" alt="">
+          <section id='team-section' class="team">
+              <figure class="team__figure">
+                <img src="assets/img/ceo.webp" alt="The CEO of Jato company, Fulana">
                 </img>
-                <figcation>teste</figcation>
-              </figure>
-              <figure>
-                <img src="" alt="">
+                <figcation>Fulana - CEO</figcation>
+              </figure >
+              <figure class="team__figure">
+                <img src="assets/img/cofounder.webp" alt="One of Jato's cofounders, Deutrano">
                 </img>
-                <figcation>teste</figcation>
-              </figure>
-              <figure>
-                <img src="" alt="">
+                <figcation>Deutrano - Cofounder </figcation>
+              </figure >
+              <figure class="team__figure">
+                <img src="assets/img/cto.webp" alt="Jato's CTO, Cyclana">
                 </img>
-                <figcation>teste</figcation>
+                <figcation>Cyclana - CTO</figcation>
               </figure>
           </section>
         </main>
-    </div>
 
+        <footer class="footer"> 
+          <div class="footer__bg"></div>
+          <div class="footer__content">
+            <div>
+              <p>Rua Genérica, 123
+                <br>
+                Centro - Santo André/SP
+              </p>
+            </div>
+            <div>
+              <p>
+                <strong>
+                  contato@email.com
+                </strong>
+              </p>
+            </div>
+            <div>
+              <a href="https://api.whatsapp.com/send?phone=5545998546402" target="_blank">
+              <strong>
+                (+55) 45 998546402
+              </strong>
+            </a>
+            </div>
+          </div>
+        </footer>
+    </div>
+    
     <script src="./script/script.js"></script>
   </body>
 </html>
